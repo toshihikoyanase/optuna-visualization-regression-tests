@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Optuna Visual Regression Tests</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            padding: 100px;
+        }
+        .wrapper {
+            padding: 64px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.08) 0 8px 24px;
+            margin: 0px auto;
+            border-radius: 8px;
+        }
+        .plot-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .plot {
+            width: 50%;
+            object-fit: contain;
+        }
+        .error-message {
+            font-weight: bold;
+            margin: 0 auto;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>plot_intermediate_values()</h1>
+    
+    <h2>Study Name: study with 1 trial</h2>
+    <div class="plot-wrapper">
+        
+        <img class="plot" src="intermediate-study with 1 trial-plotly.png">
+        
+        
+        <img class="plot" src="intermediate-study with 1 trial-matplotlib.png">
+        
+    </div>
+    
+    <h2>Study Name: study with only 1 trial that has no intermediate value</h2>
+    <div class="plot-wrapper">
+        
+        <img class="plot" src="intermediate-study with only 1 trial that has no intermediate value-plotly.png">
+        
+        
+        <img class="plot" src="intermediate-study with only 1 trial that has no intermediate value-matplotlib.png">
+        
+    </div>
+    
+    <h2>Study Name: only failed trials</h2>
+    <div class="plot-wrapper">
+        
+        <img class="plot" src="intermediate-only failed trials-plotly.png">
+        
+        
+        <img class="plot" src="intermediate-only failed trials-matplotlib.png">
+        
+    </div>
+    
+    <h2>Study Name: no trials</h2>
+    <div class="plot-wrapper">
+        
+        <img class="plot" src="intermediate-no trials-plotly.png">
+        
+        
+        <img class="plot" src="intermediate-no trials-matplotlib.png">
+        
+    </div>
+    
+</div>
+</body>
+</html>
